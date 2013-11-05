@@ -1,0 +1,25 @@
+{
+  "name": "cryptocoin-address-btc",
+  "version": "0.0.1",
+  "description": "Manage Bitcoin addresses",
+  "keywords": [
+    "cryptography",
+    "crypto",
+    "bitcoin",
+    "litecoin",
+    "currency",
+    "cryptocurrency"
+  ],
+  "ignore": [
+    "node_modules",
+    ".DS_Store",
+    "component.json",
+    "package.json"
+  ],
+  "dependencies": {
+    "cryptocoin-sha256": "0.0.x",
+    "cryptocoin-base58": "0.0.x"
+  },
+  "repo": "https://github.com/cryptocoinjs/address-btc",
+  "main": "./lib/address.js"
+}
