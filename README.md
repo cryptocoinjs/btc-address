@@ -15,22 +15,22 @@ Install
 
 ### Node.js/Browserify
 
-    npm install --save cryptocoin-address-btc
+    npm install --save btc-address
 
 ### Component
 
-    component install cryptocoinjs/address-btc
+    component install cryptocoinjs/btc-address
 
 
 ### Bower
 
-    bower install cryptocoin-address-btc
+    bower install btc-address
 
 
 ### Script
 
 ```html
-<script src="/path/to/address-btc.js"></script>
+<script src="/path/to/btc-address.js"></script>
 ```
 
 

@@ -1,5 +1,5 @@
 {
-  "name": "address-btc",
+  "name": "btc-address",
   "version": "0.0.1",
   "description": "Manage Bitcoin addresses",
   "keywords": [
@@ -10,13 +10,13 @@
     "currency",
     "cryptocurrency"
   ],
-  "repo": "cryptocoinjs/address-btc",
+  "repo": "cryptocoinjs/btc-address",
   "scripts": [
     "./lib/address.js"
   ],
   "main": "./lib/address.js",
   "dependencies": {
-    "cryptocoinjs/sha256": "0.0.x",
-    "cryptocoinjs/base58": "0.0.x"
+    "cryptocoinjs/sha256": "0.1.x",
+    "cryptocoinjs/base58": "0.1.x"
   }
 }
