@@ -40,7 +40,7 @@ Usage
 http://procbits.com/2013/08/27/generating-a-bitcoin-address-with-javascript
 
 ```js
-var Address = require('cryptocoin-address-btc')
+var Address = require('btc-address')
 var conv = require('cryptocoin-convert-hex')
 
 var hash160 = "3c176e659bea0f29a3e9bf7880c112b1b31b4dc8"
