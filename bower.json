@@ -18,7 +18,7 @@
   ],
   "dependencies": {
     "sha256": "0.1.x",
-    "cryptocoin-base58": "0.1.x"
+    "bs58": "0.2.x"
   },
   "repo": "https://github.com/cryptocoinjs/btc-address",
   "main": "./lib/address.js"

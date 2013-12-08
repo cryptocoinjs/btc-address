@@ -22,6 +22,6 @@
   "main": "./lib/address.js",
   "dependencies": {
     "sha256": "0.1.x",
-    "cryptocoin-base58": "0.1.x"
+    "bs58": "0.2.x"
   }
 }
