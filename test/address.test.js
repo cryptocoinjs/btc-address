@@ -1,5 +1,5 @@
 var Address = require('../lib/address')
-  , conv = require('cryptocoin-convert-hex')
+  , conv = require('convert-hex')
 
 require('terst')
 
