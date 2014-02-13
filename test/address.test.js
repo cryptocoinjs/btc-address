@@ -9,7 +9,7 @@ describe('Address', function() {
       var hash160 = "3c176e659bea0f29a3e9bf7880c112b1b31b4dc8"
       var address = new Address(binConv(hash160, { in : 'hex',
         out: 'bytes'
-      }), 'mainnet', 'Pubkeyhash') //'testnet is also valid'
+      }), 'mainnet', 'pubkeyhash') //'testnet is also valid'
       EQ(address.toString(), "16UjcYNBG9GTK4uq2f7yYEbuifqCzoLMGS")
     })
   })
@@ -39,16 +39,16 @@ describe('Address', function() {
   describe(' - Address.getType()', function() {
     it(' > supports pubkeyhash addresses', function() {
       var address = new Address('1111111111111111111114oLvT2')
-      EQ(address.getType(), 'Pubkeyhash')
+      EQ(address.getType(), 'pubkeyhash')
       var address = new Address('mfWxJ45yp2SFn7UciZyNpvDKrzbhyfKrY8', 'testnet')
-      EQ(address.getType('testnet'), 'Pubkeyhash')
+      EQ(address.getType('testnet'), 'pubkeyhash')
     })
 
     it(' > supports Scripthash addresses', function() {
       var address = new Address('31h1vYVSYuKP6AhS86fbRdMw9XHieotbST')
-      EQ(address.getType(), 'Scripthash')
+      EQ(address.getType(), 'scripthash')
       var address = new Address('2MsFDzHRUAMpjHxKyoEHU3aMCMsVtMqs1PV', 'testnet')
-      EQ(address.getType('testnet'), 'Scripthash')
+      EQ(address.getType('testnet'), 'scripthash')
     })
   })
 
