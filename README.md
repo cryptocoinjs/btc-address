@@ -21,7 +21,7 @@ Usage
 
 ```js
 var Address = require('btc-address')
-var binConv = require('binconv')
+var binConv = require('binstring')
 
 
 var hash160 = "3c176e659bea0f29a3e9bf7880c112b1b31b4dc8";
