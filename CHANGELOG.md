@@ -2,6 +2,7 @@ next version / 2014-02-12
 -------------------------
 * removed `bower.json` and `component.json`
 * removed wrapper to retarget to Node.js & Browserify. Closes #1
+* replaced `sha256` module for `crypto-hashing`
 
 0.2.0 / 2013-12-07
 ------------------
