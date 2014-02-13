@@ -60,5 +60,4 @@ License
 
 (MIT License)
 
-Copyright 2013, JP Richardson  <jprichardson@gmail.com>
 
