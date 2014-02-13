@@ -1,3 +1,7 @@
+next version / 2014-02-12
+-------------------------
+* removed `bower.json` and `component.json`
+
 0.2.0 / 2013-12-07
 ------------------
 * updated to dep to `bs58`
