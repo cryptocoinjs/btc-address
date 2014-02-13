@@ -1,4 +1,4 @@
-next version / 2014-02-12
+0.3.0 / 2014-02-12
 -------------------------
 * removed `bower.json` and `component.json`
 * removed wrapper to retarget to Node.js & Browserify. Closes #1
