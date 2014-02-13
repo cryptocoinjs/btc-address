@@ -17,20 +17,8 @@ Install
 
     npm install --save btc-address
 
-### Component
-
-    component install cryptocoinjs/btc-address
 
 
-### Bower
-
-    bower install btc-address
-
-
-### Script
-
-```html
-<script src="/path/to/btc-address.js"></script>
 ```
 
 
