@@ -1,3 +1,9 @@
+0.4.0 / 2014-02-12
+------------------
+* updated readme (removed component / bower / script tag references)
+* changed `address_type` to `networkType`, also renamed `prod` to `mainnet` to constructor
+* added `addressType` to constructor, valid options `pubkeyhash` and `scripthash`
+
 0.3.0 / 2014-02-12
 -------------------------
 * removed `bower.json` and `component.json`

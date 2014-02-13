@@ -1,6 +1,6 @@
 {
   "name": "btc-address",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Manage Bitcoin addresses",
   "keywords": [
     "cryptography",
