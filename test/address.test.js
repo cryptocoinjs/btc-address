@@ -9,30 +9,30 @@ describe('Address', function() {
       var hash160 = "3c176e659bea0f29a3e9bf7880c112b1b31b4dc8"
       var address = new Address(binConv(hash160, { in : 'hex',
         out: 'bytes'
-      }), 'mainnet', 'pubkeyhash') //'testnet is also valid'
+      }), 'pubkeyhash', 'mainnet') //'testnet is also valid'
       EQ(address.toString(), "16UjcYNBG9GTK4uq2f7yYEbuifqCzoLMGS")
     })
   })
 
   describe(' - Address.validate()', function() {
-    it(' > supports pubkey hash addresses', function() {
+    it(' > supports pubkeyhash addresses', function() {
       // default to mainnet
       // addresses for hash160: 0000000000000000000000000000000000000000
       T(Address.validate('1111111111111111111114oLvT2'))
-      F(Address.validate('1111111111111111111114oLvT2', 'testnet'))
+      F(Address.validate('1111111111111111111114oLvT2', undefined, 'testnet'))
 
       F(Address.validate('mfWxJ45yp2SFn7UciZyNpvDKrzbhyfKrY8'))
-      T(Address.validate('mfWxJ45yp2SFn7UciZyNpvDKrzbhyfKrY8', 'testnet'))
+      T(Address.validate('mfWxJ45yp2SFn7UciZyNpvDKrzbhyfKrY8', undefined, 'testnet'))
     })
 
     it(' > supports Scripthash addresses', function() {
       // default to mainnet
       // addresses for hash160: 0000000000000000000000000000000000000000
       T(Address.validate('31h1vYVSYuKP6AhS86fbRdMw9XHieotbST'))
-      F(Address.validate('31h1vYVSYuKP6AhS86fbRdMw9XHieotbST', 'testnet'))
+      F(Address.validate('31h1vYVSYuKP6AhS86fbRdMw9XHieotbST', undefined, 'testnet'))
 
       F(Address.validate('2MsFDzHRUAMpjHxKyoEHU3aMCMsVtMqs1PV'))
-      T(Address.validate('2MsFDzHRUAMpjHxKyoEHU3aMCMsVtMqs1PV', 'testnet'))
+      T(Address.validate('2MsFDzHRUAMpjHxKyoEHU3aMCMsVtMqs1PV', undefined, 'testnet'))
     })
   })
 
@@ -40,14 +40,14 @@ describe('Address', function() {
     it(' > supports pubkeyhash addresses', function() {
       var address = new Address('1111111111111111111114oLvT2')
       EQ(address.getType(), 'pubkeyhash')
-      var address = new Address('mfWxJ45yp2SFn7UciZyNpvDKrzbhyfKrY8', 'testnet')
+      var address = new Address('mfWxJ45yp2SFn7UciZyNpvDKrzbhyfKrY8', undefined, 'testnet')
       EQ(address.getType('testnet'), 'pubkeyhash')
     })
 
     it(' > supports Scripthash addresses', function() {
       var address = new Address('31h1vYVSYuKP6AhS86fbRdMw9XHieotbST')
       EQ(address.getType(), 'scripthash')
-      var address = new Address('2MsFDzHRUAMpjHxKyoEHU3aMCMsVtMqs1PV', 'testnet')
+      var address = new Address('2MsFDzHRUAMpjHxKyoEHU3aMCMsVtMqs1PV', undefined, 'testnet')
       EQ(address.getType('testnet'), 'scripthash')
     })
   })
